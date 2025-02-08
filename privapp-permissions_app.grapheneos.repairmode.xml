@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="app.grapheneos.repairmode">
+
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+        <permission name="android.permission.MANAGE_DYNAMIC_SYSTEM" />
+        <permission name="android.permission.INSTALL_DYNAMIC_SYSTEM" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.QUERY_USERS"/>
+
+    </privapp-permissions>
+</permissions>

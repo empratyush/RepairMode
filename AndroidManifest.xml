@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.grapheneos.repairmode">
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.MANAGE_DYNAMIC_SYSTEM"/>
+    <uses-permission android:name="android.permission.INSTALL_DYNAMIC_SYSTEM"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.QUERY_USERS"/>
+ 
+    <application
+        android:label="@string/app_label"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".RepairModeActivity"
+            android:theme="@style/AppTheme"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="app.grapheneos.intent.action.REPAIR_MODE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

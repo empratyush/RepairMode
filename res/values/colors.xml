@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="icon_gradient_light">?attr/colorPrimaryContainer</color>
+    <color name="icon_gradient_dark">?attr/colorPrimary</color>
+
+
+    <color name="icon_gradient_light_variant">?attr/colorOnPrimary</color>
+    <color name="icon_gradient_dark_variant">?attr/colorOnPrimaryContainer</color>
+
+    <color name="icon_color_background">?attr/colorOnSurface</color>
+    <color name="icon_color_on_background">?attr/colorSurfaceContainer</color>
+
+</resources>

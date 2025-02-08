@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_label">Repair mode</string>
+    <string name="rm_cover_image">Repair mode cover image</string>
+    <string name="repair_mode_active_summary_useful">Your device is currently in repair mode. If it is done being repaired, exit repair mode and your device will return to normal.\n\nYou will need to unlock your device and it will automatically restart. Changes made in repair mode will not be saved.</string>
+    <string name="repair_mode_description">Repair mode is a secure environment used while your device is being repaired. Repair mode protects your apps and personal data like photos, messages and contacts from being accessed by others.\n\nWhen you exit repair mode, your phone will return to its normal state.</string>
+    <string name="repair_mode_more_info">A strong screen lock is recommended to further protect your data.\n\nAt least 4GB of storage is required for repair mode to function. Any changes made in repair mode such as downloaded data or settings changes will not be saved.</string>
+    <string name="repair_mode_exit_description">Your device is currently in repair mode. If it is done being repaired, exit repair mode and your device will return to normal.\n\nYou will need to unlock your device and it will automatically restart. Changes made in repair mode will not be saved.</string>
+    <string name="enter_repair_mode">Enter repair mode</string>
+    <string name="exit_repair_mode">Exit repair mode</string>
+    <string name="restart_enter_repair_mode_message">Your device will restart and enter repair mode. This may take a few minutes.</string>
+    <string name="repair_mode_not_allowed_low_storage">At least 4GB of storage is required for repair mode to function. You can go to the Files app and clear up additional storage space.\n\nStorage used for repair mode will become available once you exit.</string>
+    <string name="error">Error</string>
+    <string name="okay">Okay</string>
+</resources>
