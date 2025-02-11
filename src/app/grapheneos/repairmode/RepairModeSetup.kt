@@ -9,13 +9,13 @@ import android.provider.Settings
 
 private const val REBOOT_REASON = "Repair Mode"
 private const val REPAIR_MODE_KEY = "repairmode.lock"
-private const val STORAGE_LIMIT = 4294967296L //4GB
+private const val STORAGE_LIMIT_IN_BYTES = 4294967296L //4GB
 
 fun setRepairModeEnabled(context: Context) {
     val dsm = context.getSystemService(DynamicSystemManager::class.java)
     dsm.remove()
     dsm.startInstallation(REPAIR_MODE_KEY)
-    dsm.createPartition("userdata", STORAGE_LIMIT, false)
+    dsm.createPartition("userdata", STORAGE_LIMIT_IN_BYTES, false)
     dsm.closePartition()
     dsm.finishInstallation()
     dsm.setEnable(true, false)
@@ -48,10 +48,9 @@ private fun putRepairModeEnabledSettings(isEnabled: Boolean, context: Context) {
     )
 }
 
-fun isEnoughFreeSpaceAvailable() : Boolean {
+fun isEnoughFreeSpaceAvailable(): Boolean {
     val dataDirPath = Environment.getDataDirectoryPath()
     val freeSpaceInBytes = StatFs(dataDirPath).availableBytes
-    val freeSpaceInGB = freeSpaceInBytes / (1024 * 1024 * 1024)
-    return freeSpaceInGB >= 4L
+    return freeSpaceInBytes >= STORAGE_LIMIT_IN_BYTES
 }
 
